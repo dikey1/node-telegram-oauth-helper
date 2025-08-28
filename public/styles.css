@@ -1,0 +1,5 @@
+body { font-family: system-ui, Arial, sans-serif; padding: 20px; }
+label { display: block; margin: 8px 0; }
+button { margin-top: 12px; }
+.errors { background: #fee; border: 1px solid #f99; padding: 10px; margin-bottom: 16px; }
+.error { color: #900; }

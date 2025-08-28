@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telegram MTProto Test</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main>
+    <% if (errors && errors.length) { %>
+      <div class="errors">
+        <% errors.forEach(e => { %>
+          <div class="error"><%= e %></div>
+        <% }) %>
+      </div>
+    <% } %>
+    <h1>Введите код подтверждения</h1>
+    <form method="post" action="/signIn">
+      <label>Код из Telegram <input type="text" name="code" required /></label><br />
+      <button type="submit">Войти</button>
+    </form>
+  </main>
+</body>
+</html>
